@@ -70,7 +70,7 @@ export default class SnowEffect {
   createSnowflakes() {
     const numberOfFlakes = this.isMobile ? 50 : 100;
     const maxRadius = this.isMobile ? 1 : 3;
-    const maxSpeed = this.isMobile ? .5 : 1;
+    const maxSpeed = this.isMobile ? 0.5 : 1;
 
     this.snowflakes = [];
 

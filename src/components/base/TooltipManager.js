@@ -91,38 +91,35 @@ export default class TooltipManager {
     }
   }
 
-/**
- * Attaches a tooltip to an element
- * @param {HTMLElement} element - The element the tooltip is attached to
- * @param {string} content - The text content of the tooltip
- * @param {string} position - The position of the tooltip: top, bottom, left, right
- */
-attachTooltip(element, content, position = "top") {
-  const isTouchDevice = "ontouchstart" in window;
+  /**
+   * Attaches a tooltip to an element
+   * @param {HTMLElement} element - The element the tooltip is attached to
+   * @param {string} content - The text content of the tooltip
+   * @param {string} position - The position of the tooltip: top, bottom, left, right
+   */
+  attachTooltip(element, content, position = "top") {
+    const isTouchDevice = "ontouchstart" in window;
 
-  if (isTouchDevice) {
-    element.addEventListener("click", (event) => {
-      event.stopPropagation();
-      if (this.tooltipElement) {
+    if (isTouchDevice) {
+      element.addEventListener("click", (event) => {
+        event.stopPropagation();
+        if (this.tooltipElement) {
+          this.hideTooltip();
+        } else {
+          this.showTooltip(element, content, position);
+        }
+      });
 
-        this.hideTooltip();
-      } else {
-
-        this.showTooltip(element, content, position);
-      }
-    });
-
-    document.addEventListener("click", (event) => {
-      if (this.tooltipElement && !element.contains(event.target)) {
-        this.hideTooltip();
-      }
-    });
-  } else {
-
-    element.addEventListener("mouseenter", () =>
-      this.showTooltip(element, content, position)
-    );
-    element.addEventListener("mouseleave", () => this.hideTooltip());
+      document.addEventListener("click", (event) => {
+        if (this.tooltipElement && !element.contains(event.target)) {
+          this.hideTooltip();
+        }
+      });
+    } else {
+      element.addEventListener("mouseenter", () =>
+        this.showTooltip(element, content, position)
+      );
+      element.addEventListener("mouseleave", () => this.hideTooltip());
+    }
   }
-}
 }
