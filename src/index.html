@@ -44,17 +44,11 @@
       content="https://hi-links.vercel.app/twitter-card-image.jpg"
     />
     <meta name="robots" content="index, follow" />
-    <!-- <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Hi-Links" /> -->
-
-  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5A53E4">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5A53E4" />
     <meta name="author" content="Alina Polozhai" />
     <meta
       name="keywords"
@@ -62,21 +56,22 @@
     />
     <meta
       name="google-site-verification"
-      content="%GOOGLE_SITE_VERIFICATION%"
+      content="<%= process.env.GOOGLE_SITE_VERIFICATION %>"
     />
     <!-- Google tag (gtag.js) -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=__GA_ID__"
+      src="https://www.googletagmanager.com/gtag/js?id=process.env.GA_ID"
     ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "__GA_ID__");
-    </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SNP5LG15VM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SNP5LG15VM');
+</script>
   </head>
   <body></body>
 </html>
