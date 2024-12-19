@@ -29,12 +29,14 @@ export default class ThemedContainer {
     this.themeButton = new Button({
       icon: this.getCurrentThemeIcon(),
       className: "theme-button",
+      ariaLabel: "Change theme",
       onClick: () => this.handleThemeChange(),
     });
 
     this.holidayButton = new Button({
       icon: this.specialThemeIcon,
       className: "holiday-button",
+      ariaLabel: "Select holiday special theme",
       onClick: () => this.handleHolidayMode(),
     });
 
