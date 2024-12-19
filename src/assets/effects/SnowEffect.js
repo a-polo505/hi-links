@@ -6,6 +6,7 @@ export default class SnowEffect {
     this.snowflakes = [];
     this.animationFrameId = null;
     this.handleResize = this.handleResize.bind(this);
+    this.isMobile = window.innerWidth <= 768;
   }
 
   init() {
@@ -57,6 +58,7 @@ export default class SnowEffect {
       this.canvas.width = width;
       this.canvas.height = height;
 
+      this.isMobile = width <= 768;
       this.createSnowflakes();
     }
   }
@@ -66,15 +68,18 @@ export default class SnowEffect {
   }
 
   createSnowflakes() {
-    const numberOfFlakes = 100;
+    const numberOfFlakes = this.isMobile ? 50 : 100;
+    const maxRadius = this.isMobile ? 1 : 3;
+    const maxSpeed = this.isMobile ? 0.5 : 1;
+
     this.snowflakes = [];
 
     for (let i = 0; i < numberOfFlakes; i++) {
       this.snowflakes.push({
         x: Math.random() * this.canvas.width,
         y: Math.random() * this.canvas.height,
-        radius: Math.random() * 3 + 1,
-        speed: Math.random() * 1.5 + 0.5,
+        radius: Math.random() * maxRadius + 1,
+        speed: Math.random() * maxSpeed + 0.5,
       });
     }
   }

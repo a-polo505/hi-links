@@ -100,12 +100,26 @@ export default class TooltipManager {
   attachTooltip(element, content, position = "top") {
     const isTouchDevice = "ontouchstart" in window;
 
-    const showEvent = isTouchDevice ? "click" : "mouseenter";
-    const hideEvent = isTouchDevice ? "click" : "mouseleave";
+    if (isTouchDevice) {
+      element.addEventListener("click", (event) => {
+        event.stopPropagation();
+        if (this.tooltipElement) {
+          this.hideTooltip();
+        } else {
+          this.showTooltip(element, content, position);
+        }
+      });
 
-    element.addEventListener(showEvent, () =>
-      this.showTooltip(element, content, position)
-    );
-    element.addEventListener(hideEvent, () => this.hideTooltip());
+      document.addEventListener("click", (event) => {
+        if (this.tooltipElement && !element.contains(event.target)) {
+          this.hideTooltip();
+        }
+      });
+    } else {
+      element.addEventListener("mouseenter", () =>
+        this.showTooltip(element, content, position)
+      );
+      element.addEventListener("mouseleave", () => this.hideTooltip());
+    }
   }
 }

@@ -11,15 +11,8 @@ export default class LogoContainer {
     const container = document.createElement("div");
     container.className = "logo-container";
 
-    const logoLink = document.createElement("a");
-    logoLink.className = "logo-link";
-    logoLink.setAttribute("href", "/");
-    logoLink.setAttribute("aria-label", "Go to homepage");
-
-    container.appendChild(logoLink);
-
     const logoElement = this.logo.render();
-    logoLink.appendChild(logoElement);
+    container.appendChild(logoElement);
 
     const badgeElement = this.badge.render();
     container.appendChild(badgeElement);
