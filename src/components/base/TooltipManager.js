@@ -91,21 +91,38 @@ export default class TooltipManager {
     }
   }
 
-  /**
-   * Attaches a tooltip to an element
-   * @param {HTMLElement} element - The element the tooltip is attached to
-   * @param {string} content - The text content of the tooltip
-   * @param {string} position - The position of the tooltip: top, bottom, left, right
-   */
-  attachTooltip(element, content, position = "top") {
-    const isTouchDevice = "ontouchstart" in window;
+/**
+ * Attaches a tooltip to an element
+ * @param {HTMLElement} element - The element the tooltip is attached to
+ * @param {string} content - The text content of the tooltip
+ * @param {string} position - The position of the tooltip: top, bottom, left, right
+ */
+attachTooltip(element, content, position = "top") {
+  const isTouchDevice = "ontouchstart" in window;
 
-    const showEvent = isTouchDevice ? "click" : "mouseenter";
-    const hideEvent = isTouchDevice ? "click" : "mouseleave";
+  if (isTouchDevice) {
+    element.addEventListener("click", (event) => {
+      event.stopPropagation();
+      if (this.tooltipElement) {
 
-    element.addEventListener(showEvent, () =>
+        this.hideTooltip();
+      } else {
+
+        this.showTooltip(element, content, position);
+      }
+    });
+
+    document.addEventListener("click", (event) => {
+      if (this.tooltipElement && !element.contains(event.target)) {
+        this.hideTooltip();
+      }
+    });
+  } else {
+
+    element.addEventListener("mouseenter", () =>
       this.showTooltip(element, content, position)
     );
-    element.addEventListener(hideEvent, () => this.hideTooltip());
+    element.addEventListener("mouseleave", () => this.hideTooltip());
   }
+}
 }
