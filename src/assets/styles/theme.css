@@ -1,4 +1,8 @@
 html {
+  background: var(--html-background-color);
+}
+
+body {
   background: var(--background-color);
 }
 
