@@ -1,0 +1,12 @@
+.section,
+.block {
+  gap: var(--spacing-base);
+}
+
+.section-description {
+  font-weight: 300;
+}
+
+.section-title span {
+  display: inline-block;
+}

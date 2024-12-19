@@ -1,0 +1,40 @@
+.button {
+  padding: var(--spacing-tiny) var(--spacing-meduim);
+  border-radius: var(--border-radius-base);
+  border: var(--border-solid);
+  gap: var(--spacing-small);
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button-label {
+  font-size: var(--font-size-base);
+  font-weight: 300;
+}
+
+.button-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.button:active {
+  box-shadow: var(--box-shadow-button);
+}
+
+.theme-button,
+.holiday-button {
+  position: relative;
+  padding: var(--spacing-tiny);
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.theme-button svg path {
+  transition:
+    fill 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}

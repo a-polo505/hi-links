@@ -1,0 +1,219 @@
+html {
+  background: var(--background-color);
+}
+
+.button {
+  border-color: var(--border-button-color) !important;
+  background-color: transparent;
+}
+
+.button-label {
+  color: var(--text-light-color);
+}
+
+.theme-button svg path {
+  fill: var(--text-light-color);
+}
+
+.theme-button:hover,
+.holiday-button:hover {
+  background-color: var(--border-button-color);
+}
+
+.website-button:hover .button-label,
+.bento-button:hover .button-label,
+.dashboard-button:hover .button-label,
+.linkedin-button:hover .button-label,
+.twitter-button:hover .button-label,
+.bluesky-button:hover .button-label,
+.github-button:hover .button-label {
+  color: var(--font-theme-color);
+}
+
+.email-button:hover .button-label {
+  color: #1d1d1d !important;
+}
+
+.email-button .button-icon svg path {
+  fill: var(--button-default-icon-color) !important;
+}
+
+.website-button:hover {
+  background-color: #5f59e7;
+}
+
+.bento-button:hover {
+  background-color: #7a8fff;
+}
+
+.bento-button svg .path-0 {
+  fill: #dbdbdb;
+}
+
+.bento-button svg .path-1 {
+  fill: #ff8686;
+}
+
+.bento-button svg .path-2 {
+  fill: #5aff88;
+}
+
+.bento-button svg .path-3 {
+  fill: #768cff;
+}
+
+.bento-button svg .path-fill {
+  fill: #ffffff;
+}
+
+.email-button:hover {
+  background-color: #f1f1f1;
+}
+
+.email-button:hover .button-label {
+  color: #1d1d1d !important;
+}
+
+.dashboard-button:hover {
+  background-color: #000000;
+}
+
+.gumroad-button:hover {
+  background-color: #ff90e8;
+}
+
+.gumroad-button:hover .button-label {
+  color: #000000;
+}
+
+.gumroad-button:hover svg {
+  fill: #ffffff;
+}
+
+.gumroad-button svg .path-1 {
+  fill: #000000;
+}
+
+.gumroad-button svg .path-2 {
+  fill: #ff90e8;
+  stroke: #000000;
+}
+
+.gumroad-button svg .path-3 {
+  fill: #000000;
+}
+
+.gumroad-button:hover svg .path-1 {
+  fill: #000000;
+}
+
+.gumroad-button:hover svg .path-2 {
+  fill: #ff90e8;
+  stroke: #000000;
+}
+
+.gumroad-button:hover svg .path-3 {
+  fill: #000000;
+}
+
+.linkedin-button:hover {
+  background-color: #0077b5;
+}
+
+.twitter-button:hover {
+  background-color: #000000;
+}
+
+.bluesky-button .button-icon svg path {
+  fill: #0085ff;
+}
+
+.bluesky-button:hover {
+  background-color: #0085ff;
+}
+
+.bluesky-button:hover .button-icon svg path {
+  fill: #ffffff;
+}
+
+.github-button .button-icon svg path {
+  fill: var(--fill-color);
+}
+
+.github-button:hover {
+  background-color: #000000;
+}
+
+.github-button:hover .button-icon svg path {
+  fill: var(--font-theme-color);
+}
+
+.layers-button svg path {
+  fill: var(--text-color);
+}
+
+.layers-button:hover svg path {
+  fill: #000000;
+}
+
+.layers-button:hover {
+  background-color: #f1f1f1;
+}
+
+.layers-button:hover .button-label {
+  color: #252c39;
+}
+
+.dribbble-button svg {
+  fill: #ffabe7;
+}
+
+.dribbble-button:hover svg {
+  fill: #ffabe7;
+}
+
+.dribbble-button:hover {
+  background-color: #ffabe7;
+}
+
+.dribbble-button:hover .button-label {
+  color: #5e0043;
+}
+
+.badge.circle .pulse-element,
+.badge.rectangle {
+  background-color: var(--accent-color);
+}
+
+.badge.circle {
+  background-color: rgba(31, 210, 72, 50%);
+}
+
+.badge-text {
+  color: var(--font-theme-color);
+}
+
+.card {
+  border-color: var(--border-color) !important;
+  background-color: var(--card-background-color);
+}
+
+h1,
+h2,
+p,
+.logo-text {
+  color: var(--text-color);
+}
+
+.logo-sub-text {
+  color: var(--text-light-color);
+}
+
+.tooltip {
+  background-color: var(--primary-color);
+  color: var(--tooltip-theme-color);
+}
+
+footer {
+  color: var(--text-light-color);
+}

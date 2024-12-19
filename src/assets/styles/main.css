@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("./variables.css");
+@import url("./flex.css");
+@import url("./theme.css");
+@import url("./special-theme.css");
+@import url("./base/tooltip.css");
+@import url("./base/button.css");
+@import url("./base/section.css");
+@import url("./structural/card.css");
+@import url("./structural/logo-container.css");
+@import url("./base/badge.css");
+@import url("./base/animated-line.css");
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body,
+main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+p {
+  font-family: "Inter";
+  line-height: 1.5;
+}
+
+main {
+  position: relative;
+  min-height: 100vh;
+  width: auto;
+  gap: var(--spacing-extra-large);
+  height: min-content;
+  padding: var(--spacing-large) 0px;
+  overflow: hidden;
+}
+
+footer {
+  font-size: var(--font-size-small);
+  padding-bottom: var(--spacing-meduim);
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  p {
+    line-height: 1.4;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}

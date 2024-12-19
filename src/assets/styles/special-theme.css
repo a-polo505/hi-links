@@ -1,0 +1,291 @@
+@keyframes swing {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.holiday-button:hover .button-icon {
+  animation: swing 0.7s ease-in-out;
+}
+
+[data-theme="special"] .theme-button:hover svg path {
+  fill: #324c33;
+}
+
+[data-theme="special"] .holiday-button {
+  background: linear-gradient(#670a0a, #420707);
+}
+
+[data-theme="special"] .holiday-button:hover {
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="special"] .website-button svg .path-2 {
+  fill: #bc9b3d;
+}
+
+[data-theme="special"] .website-button svg .path-3 {
+  fill: #324c33;
+}
+
+[data-theme="special"] .website-button:hover svg .path-2 {
+  fill: url(#b);
+}
+
+[data-theme="special"] .website-button:hover svg .path-3 {
+  fill: url(#c);
+}
+
+[data-theme="special"] .bento-button:hover svg .path-0 {
+  fill: #dbdbdb;
+}
+
+[data-theme="special"] .bento-button:hover svg .path-1 {
+  fill: #ff8686;
+}
+
+[data-theme="special"] .bento-button:hover svg .path-2 {
+  fill: #5aff88;
+}
+
+[data-theme="special"] .bento-button:hover svg .path-3 {
+  fill: #768cff;
+}
+
+[data-theme="special"] .bento-button:hover svg .path-fill {
+  fill: #ffffff;
+}
+
+[data-theme="special"] .bento-button svg .path-0 {
+  fill: #817839;
+}
+
+[data-theme="special"] .bento-button svg .path-1 {
+  fill: #324c33;
+}
+
+[data-theme="special"] .bento-button svg .path-2 {
+  fill: #324c33;
+}
+
+[data-theme="special"] .bento-button svg .path-3 {
+  fill: #324c33;
+}
+
+[data-theme="special"] .bento-button svg .path-fill {
+  fill: #bc9b3d;
+}
+
+[data-theme="special"] .email-button .button-icon svg path {
+  fill: #bc9b3d !important;
+}
+
+[data-theme="special"] .email-button:hover .button-icon svg path {
+  fill: var(--fill-color) !important;
+}
+
+[data-theme="special"] .button:hover .button-label {
+  color: #5e0043;
+}
+
+[data-theme="special"] .dashboard-button svg .path-1 {
+  fill: #324c33;
+}
+
+[data-theme="special"] .dashboard-button:hover svg .path-1 {
+  fill: inherit;
+}
+
+[data-theme="special"] .dashboard-button:hover svg .path-2 {
+  fill: inherit;
+}
+
+[data-theme="special"] .dashboard-button:hover svg .path-3 {
+  fill: inherit;
+}
+
+[data-theme="special"] .dashboard-button svg .path-2 {
+  fill: #817839;
+}
+
+[data-theme="special"] .dashboard-button svg .path-3 {
+  fill: #bc9b3d;
+}
+
+[data-theme="special"] .dashboard-button:hover svg .path-1 {
+  fill: #45059d;
+}
+
+[data-theme="special"] .dashboard-button:hover svg .path-2 {
+  fill: url(#paint0_linear_144_56);
+}
+
+[data-theme="special"] .dashboard-button:hover svg .path-3 {
+  fill: url(#paint1_linear_144_56);
+}
+
+[data-theme="special"] .gumroad-button:hover svg .path-1 {
+  fill: #000000;
+}
+
+[data-theme="special"] .gumroad-button:hover svg .path-2 {
+  fill: #ff90e8;
+  stroke: #000000;
+}
+
+[data-theme="special"] .gumroad-button:hover svg .path-3 {
+  fill: #000000;
+}
+
+[data-theme="special"] .gumroad-button svg .path-1 {
+  fill: #324c33;
+}
+
+[data-theme="special"] .gumroad-button svg .path-2 {
+  fill: #bc9b3d;
+  stroke: #324c33;
+}
+
+[data-theme="special"] .gumroad-button svg .path-3 {
+  fill: #324c33;
+}
+
+[data-theme="special"] .twitter-button:hover svg rect {
+  fill: var(--fill-color);
+}
+[data-theme="special"] .linkedin-button svg rect {
+  fill: #bc9b3d;
+}
+
+[data-theme="special"] .linkedin-button svg path {
+  fill: #324c33;
+}
+
+[data-theme="special"] .linkedin-button:hover svg rect {
+  fill: #0085ff;
+}
+
+[data-theme="special"] .linkedin-button:hover svg path {
+  fill: #ffffff;
+}
+
+[data-theme="special"] .twitter-button svg rect {
+  fill: #bc9b3d;
+}
+
+[data-theme="special"] .twitter-button svg path {
+  fill: #324c33;
+}
+
+[data-theme="special"] .twitter-button:hover svg rect {
+  fill: var(--fill-color);
+}
+
+[data-theme="special"] .twitter-button:hover svg path {
+  fill: #ffffff;
+}
+
+[data-theme="special"] .bluesky-button svg path {
+  fill: #bc9b3d;
+}
+
+[data-theme="special"] .bluesky-button:hover svg path {
+  fill: #0085ff;
+}
+
+[data-theme="special"] .github-button svg path {
+  fill: #bc9b3d;
+}
+
+[data-theme="special"] .github-button:hover svg path {
+  fill: var(--fill-color);
+}
+
+[data-theme="special"] .dribbble-button:hover svg {
+  fill: #ffabe7;
+}
+
+[data-theme="special"] .dribbble-button svg path {
+  stroke: #324c33;
+}
+
+[data-theme="special"] .dribbble-button:hover svg path {
+  stroke: #5e0043;
+}
+
+[data-theme="special"] .dribbble-button svg {
+  fill: #bc9b3d;
+}
+
+[data-theme="special"] .card {
+  box-shadow:
+    0 0 15px 0px rgba(255, 246, 157, 0.8),
+    0 0 10px 0px rgba(229, 204, 107, 0.6),
+    0 0 15px 15px rgba(205, 164, 62, 0.4);
+}
+
+[data-theme="special"] .tooltip,
+[data-theme="special"] .theme-button:hover,
+[data-theme="special"] .website-button:hover,
+[data-theme="special"] .bento-button:hover,
+[data-theme="special"] .email-button:hover,
+[data-theme="special"] .dashboard-button:hover,
+[data-theme="special"] .gumroad-button:hover,
+[data-theme="special"] .linkedin-button:hover,
+[data-theme="special"] .twitter-button:hover,
+[data-theme="special"] .bluesky-button:hover,
+[data-theme="special"] .github-button:hover,
+[data-theme="special"] .layers-button:hover,
+[data-theme="special"] .dribbble-button:hover {
+  background: linear-gradient(
+    315deg,
+    rgb(205, 164, 60) 0%,
+    rgb(255, 247, 158) 100%
+  );
+}
+
+[data-theme="special"] .tooltip,
+[data-theme="special"] .website-button:hover .button-label,
+[data-theme="special"] .bento-button:hover .button-label,
+[data-theme="special"] .dashboard-button:hover .button-label,
+[data-theme="special"] .linkedin-button:hover .button-label,
+[data-theme="special"] .twitter-button:hover .button-label,
+[data-theme="special"] .bluesky-button:hover .button-label,
+[data-theme="special"] .github-button:hover .button-label {
+  color: var(--special-text-theme-color) !important;
+}
+
+[data-theme="special"] .animated-line {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgb(242, 226, 163),
+    rgb(153, 134, 91) 10px,
+    rgb(103, 10, 10) 10px,
+    rgb(57, 5, 5) 20px
+  );
+}
+
+[data-theme="special"] .badge.circle {
+  background-color: rgba(153, 134, 91, 50%);
+}
+
+[data-theme="special"] .section-description {
+  color: var(--text-light-color);
+}
+
+[data-theme="dark"] .holiday-button:hover svg .path-1,
+[data-theme="dark"] .holiday-button:hover svg .path-2 {
+  fill: #d7d5ff;
+}

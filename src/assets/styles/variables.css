@@ -1,0 +1,63 @@
+:root {
+  --primary-color: #525dd4;
+  --accent-color: #1fd248;
+  --fill-color: #000000;
+  --font-theme-color: #ffffff;
+  --background-color: #ffffff;
+  --card-background-color: #ffffff;
+  --text-color: #1e1e1e;
+  --text-light-color: #646464;
+  --border-color: #ebebeb;
+  --border-button-color: #f3f3f3;
+  --button-default-icon-color: #474747;
+  --tooltip-theme-color: #ffffff;
+
+  --font-family-base: "Inter", sans-serif;
+  --font-family-heading: "Poppins", sans-serif;
+  --font-size-tiny: 0.666rem; /* 10px */
+  --font-size-small: 0.733rem; /* 11px */
+  --font-size-base: 1rem; /* 15px */
+  --font-size-h1: 1.867rem; /* 28px */
+  --font-size-h2: 1.066rem; /* 16px */
+  --line-height-base: 1.5;
+
+  --spacing-extra-small: 0.133rem; /* 4px */
+  --spacing-tiny: 0.4rem; /* 6px */
+  --spacing-small: 0.533rem; /* 8px */
+  --spacing-mini: 0.8rem; /* 12px */
+  --spacing-base: 1rem; /* 15px */
+  --spacing-meduim: 1.333rem; /* 20px */
+  --spacing-large: 2rem; /* 30px */
+  --spacing-extra-large: 3.333rem; /* 50px */
+
+  --border-solid: 1px solid;
+  --border-radius-small: 0.8rem; /* 12px */
+  --border-radius-base: 1.333rem; /* 20px */
+  --border-radius-large: 1.6rem; /* 24px */
+
+  --box-shadow-button: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --background-color: #0d1118;
+  --card-background-color: #171d29;
+  --border-button-color: #525dd4;
+  --border-color: #525dd4;
+  --text-color: #ffffff;
+  --text-light-color: #d7d5ff;
+  --fill-color: #ffffff;
+  --button-default-icon-color: #525dd4;
+}
+
+/* Special Theme - New Year */
+[data-theme="special"] {
+  --background-color: radial-gradient(50% 51.7% at 50% 0%, #0d7073, #00291d);
+  --card-background-color: #0d70732e;
+  --text-color: #f7c953;
+  --text-light-color: rgb(245, 237, 201);
+  --special-text-theme-color: #420c0c;
+  --primary-color: #ffffff;
+  --accent-color: #cda43c;
+  --border-color: rgba(255, 246, 157, 0.8);
+  --border-solid: 1px solid transparent;
+}

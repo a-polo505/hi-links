@@ -1,0 +1,21 @@
+.logo-container {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  overflow: visible;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo-text {
+  font-weight: 600;
+}
+
+.logo-sub-text {
+  font-weight: 300;
+}
