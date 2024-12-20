@@ -1,12 +1,13 @@
+import { inject } from "@vercel/analytics";
 import Page from "./components/structural/Page.js";
 import Card from "./components/structural/Card.js";
 import Footer from "./components/structural/Footer.js";
 import Header from "./components/structural/Header.js";
 import ThemeUtils from "./services/ThemeService.js";
-
 import { FooterTextProvider } from "./assets/utils/FooterTextProvider.js";
-
 import "./assets/styles/main.css";
+
+inject();
 
 export default class App {
   constructor() {
