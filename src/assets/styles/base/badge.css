@@ -29,7 +29,7 @@
 }
 
 .badge.rectangle {
-  width: 50px;
+  width: 55px;
   height: 18px;
   border-radius: var(--border-radius-base);
   transition: all 0.3s ease;
@@ -56,7 +56,7 @@
     height: 20px;
   }
   .badge.rectangle {
-    width: 50px;
+    width: 55px;
     height: 20px;
   }
 }

@@ -12,7 +12,7 @@ export default class Card {
     this.header = new CardHeader(
       "https://raw.githubusercontent.com/a-polo505/static/e4f34132cac6aa096a407d4b7237b1fd3cd17c91/assets/hi-links/images/a-polo505.svg",
       "a-polo505 Brand Logotype",
-      "Online",
+      "Crafting",
       "Alina",
       "Business Systems Analyst"
     );
