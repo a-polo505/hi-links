@@ -1,5 +1,6 @@
 .badge {
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 .badge.circle {
@@ -28,7 +29,7 @@
 }
 
 .badge.rectangle {
-  width: 50px;
+  width: 55px;
   height: 18px;
   border-radius: var(--border-radius-base);
   transition: all 0.3s ease;
@@ -47,6 +48,17 @@
   white-space: nowrap;
   font-size: var(--font-size-tiny);
   letter-spacing: 0.028rem;
+}
+
+@media (max-width: 768px) {
+  .badge.circle {
+    width: 20px;
+    height: 20px;
+  }
+  .badge.rectangle {
+    width: 55px;
+    height: 20px;
+  }
 }
 
 @keyframes pulse {

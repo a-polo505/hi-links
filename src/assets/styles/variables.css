@@ -4,6 +4,7 @@
   --fill-color: #000000;
   --font-theme-color: #ffffff;
   --background-color: #ffffff;
+  --html-background-color: #ffffff;
   --card-background-color: #ffffff;
   --text-color: #1e1e1e;
   --text-light-color: #646464;
@@ -40,6 +41,7 @@
 
 [data-theme="dark"] {
   --background-color: #0d1118;
+  --html-background-color: #0d1118;
   --card-background-color: #171d29;
   --border-button-color: #525dd4;
   --border-color: #525dd4;
@@ -52,9 +54,10 @@
 /* Special Theme - New Year */
 [data-theme="special"] {
   --background-color: radial-gradient(50% 51.7% at 50% 0%, #0d7073, #00291d);
+  --html-background-color: #08463f;
   --card-background-color: #0d70732e;
   --text-color: #f7c953;
-  --text-light-color: rgb(245, 237, 201);
+  --text-light-color: #f5edc9;
   --special-text-theme-color: #420c0c;
   --primary-color: #ffffff;
   --accent-color: #cda43c;
