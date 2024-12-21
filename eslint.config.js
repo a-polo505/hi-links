@@ -18,6 +18,8 @@ export default [
         localStorage: "readonly",
         requestAnimationFrame: "readonly",
         cancelAnimationFrame: "readonly",
+        fetch: "readonly",
+        console: "readonly",
       },
     },
     plugins: {

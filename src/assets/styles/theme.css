@@ -221,3 +221,8 @@ p,
 footer {
   color: var(--text-light-color);
 }
+
+.stamp-svg svg path,
+.mobile-stamp svg path {
+  fill: var(--primary-color);
+}
