@@ -1,0 +1,37 @@
+.stamp-svg {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 20vh;
+  z-index: 10;
+  pointer-events: none;
+  transform: translate(30%);
+  opacity: 0.15;
+}
+
+.mobile-stamp {
+  position: absolute;
+  bottom: -15px;
+  right: -50px;
+  height: auto;
+  pointer-events: none;
+  opacity: 0.05;
+  z-index: -1;
+}
+
+.mobile-stamp svg {
+  width: 250px;
+  height: 250px;
+}
+
+@media (max-width: 768px) {
+  .stamp-svg {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-stamp {
+    display: none;
+  }
+}

@@ -10,6 +10,7 @@
 @import url("./structural/logo-container.css");
 @import url("./base/badge.css");
 @import url("./base/animated-line.css");
+@import url("./base/stamp.css");
 
 * {
   box-sizing: border-box;
