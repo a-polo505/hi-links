@@ -2,6 +2,7 @@ export default class BaseSvgManager {
   constructor(filePath) {
     this.filePath = filePath;
     this.svgElement = null;
+    this.containerElement = null;
   }
 
   async loadSVG() {
@@ -12,20 +13,28 @@ export default class BaseSvgManager {
     return response.text();
   }
 
-  createSVG(container, svgContent, className) {
-    if (this.svgElement) return;
+  createSVG(container, svgContent, wrapperClassName, svgClassName) {
+    if (this.containerElement) return;
 
     const svgWrapper = document.createElement("div");
-    svgWrapper.className = className;
+    svgWrapper.className = wrapperClassName;
+
     svgWrapper.innerHTML = svgContent;
 
+    const svgElement = svgWrapper.querySelector("svg");
+    if (svgElement) {
+      svgElement.classList.add(svgClassName);
+      this.svgElement = svgElement;
+    }
+
     container.appendChild(svgWrapper);
-    this.svgElement = svgWrapper;
+    this.containerElement = svgWrapper;
   }
 
   removeSVG() {
-    if (this.svgElement) {
-      this.svgElement.remove();
+    if (this.containerElement) {
+      this.containerElement.remove();
+      this.containerElement = null;
       this.svgElement = null;
     }
   }

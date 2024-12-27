@@ -48,7 +48,10 @@ export default class ProjectsSection {
     projectsBlock.addButton(widgetButton);
     projectsBlock.addButton(gumroadButton);
 
-    const projectsSection = new Section("Projects", "projects");
+    const projectsSection = new Section("Projects", "projects", {
+      content: "Create. <s>Eat</s>. <s>Sleep</s>.",
+      position: "right",
+    });
     projectsSection.addBlock(projectsBlock);
 
     return projectsSection;

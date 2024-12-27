@@ -9,7 +9,7 @@ export default class StampSvgManager extends BaseSvgManager {
     if (window.innerWidth > 768) {
       try {
         const svgContent = await this.loadSVG();
-        this.createSVG(document.body, svgContent, "stamp-svg");
+        this.createSVG(document.body, svgContent, "stamp-svg", "rotating");
       } catch (error) {
         console.error(error.message);
       }
@@ -20,9 +20,9 @@ export default class StampSvgManager extends BaseSvgManager {
 
   async handleResize() {
     if (window.innerWidth > 768) {
-      if (!this.svgElement) {
+      if (!this.containerElement) {
         const svgContent = await this.loadSVG();
-        this.createSVG(document.body, svgContent, "stamp-svg");
+        this.createSVG(document.body, svgContent, "stamp-svg", "rotating");
       }
     } else {
       this.removeSVG();
