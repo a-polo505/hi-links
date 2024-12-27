@@ -22,8 +22,7 @@ export default class TooltipManager {
    */
   showTooltip(target, content, position = "top") {
     this.createTooltip();
-    this.tooltipElement.textContent = content;
-
+    this.tooltipElement.innerHTML = content;
     this.tooltipElement.className = `tooltip ${position}`;
 
     const targetRect = target.getBoundingClientRect();
