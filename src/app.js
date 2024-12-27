@@ -6,6 +6,7 @@ import Header from "./components/structural/Header.js";
 import ThemeUtils from "./services/ThemeService.js";
 import StampSvgManager from "./components/decorative/StampElement.js";
 import CardStampManager from "./components/decorative/CardStampManager.js";
+import BackgroundManager from "./components/decorative/BackgroundManager.js";
 import { FooterTextProvider } from "./assets/utils/FooterTextProvider.js";
 import "./assets/styles/main.css";
 
@@ -14,6 +15,10 @@ inject();
 export default class App {
   constructor() {
     this.page = new Page();
+    this.backgroundManager = new BackgroundManager("/background-noise.png", {
+      size: "128px",
+      repeat: "repeat",
+    });
   }
 
   initialize() {
@@ -39,6 +44,8 @@ export default class App {
 
     const cardStampManager = new CardStampManager("/stamp.svg", cardElement);
     cardStampManager.initialize();
+
+    this.backgroundManager.initialize();
   }
 }
 

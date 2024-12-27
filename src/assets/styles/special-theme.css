@@ -285,6 +285,10 @@
   color: var(--text-light-color);
 }
 
+[data-theme="special"] .background-manager {
+  opacity: 0.04;
+}
+
 [data-theme="dark"] .holiday-button:hover svg .path-1,
 [data-theme="dark"] .holiday-button:hover svg .path-2 {
   fill: #d7d5ff;

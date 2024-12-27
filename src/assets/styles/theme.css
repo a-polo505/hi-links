@@ -202,6 +202,10 @@ body {
   background-color: var(--card-background-color);
 }
 
+[data-theme="dark"] .background-manager {
+  opacity: 0.04;
+}
+
 h1,
 h2,
 p,
