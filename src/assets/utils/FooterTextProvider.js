@@ -5,6 +5,6 @@ export class FooterTextProvider {
 
   getText() {
     const currentYear = new Date().getFullYear();
-    return `© ${currentYear}, ${this.baseText}`;
+    return `© 2024—${currentYear}, ${this.baseText}`;
   }
 }
