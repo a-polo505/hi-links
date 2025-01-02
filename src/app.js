@@ -34,7 +34,7 @@ export default class App {
     this.page.addMainContent(cardElement);
 
     const footerTextProvider = new FooterTextProvider(
-      "a-polo505. All rights reserved."
+      "created with 💜 by Alina Polozhai. All rights reserved."
     );
     const footer = new Footer(footerTextProvider);
     this.page.addFooterContent(footer);
