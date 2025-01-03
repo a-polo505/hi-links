@@ -4,7 +4,7 @@ export default class Footer {
   }
 
   render() {
-    const footerContent = document.createElement("nav");
+    const footerContent = document.createElement("div");
     footerContent.className = "footer-content";
     footerContent.textContent = this.footerTextProvider.getText();
 

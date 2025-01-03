@@ -44,6 +44,7 @@ export default class Page {
    */
   addHeaderContent(header) {
     this.appendContent(this.headerElement, header.render());
+    this.headerElement.setAttribute("role", "banner");
   }
 
   /**
@@ -52,6 +53,7 @@ export default class Page {
    */
   addMainContent(element) {
     this.appendContent(this.mainElement, element);
+    this.mainElement.setAttribute("role", "main");
   }
 
   /**
@@ -60,6 +62,7 @@ export default class Page {
    */
   addFooterContent(footer) {
     this.appendContent(this.footerElement, footer.render());
+    this.footerElement.setAttribute("role", "contentinfo");
   }
 
   /**

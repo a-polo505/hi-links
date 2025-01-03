@@ -144,12 +144,25 @@ body {
   fill: var(--fill-color);
 }
 
-.github-button:hover {
+.github-button:hover,
+.codepen-button:hover {
   background-color: #000000;
 }
 
 .github-button:hover .button-icon svg path {
   fill: var(--font-theme-color);
+}
+
+.codepen-button .button-icon svg path {
+  fill: var(--fill-color);
+}
+
+.codepen-button:hover .button-icon svg path {
+  fill: var(--font-theme-color);
+}
+
+.codepen-button:hover .button-label {
+  color: #ffffff;
 }
 
 .layers-button svg path {

@@ -12,6 +12,7 @@
 @import url("./base/animated-line.css");
 @import url("./base/stamp.css");
 @import url("./base/background-manager.css");
+@import url("./base/footer-content.css");
 
 * {
   box-sizing: border-box;
@@ -71,6 +72,7 @@ main {
 footer {
   font-size: var(--font-size-small);
   padding-bottom: var(--spacing-meduim);
+  text-wrap: balance;
   font-weight: 300;
 }
 
