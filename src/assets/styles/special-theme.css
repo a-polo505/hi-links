@@ -248,7 +248,8 @@
 [data-theme="special"] .bluesky-button:hover,
 [data-theme="special"] .github-button:hover,
 [data-theme="special"] .layers-button:hover,
-[data-theme="special"] .dribbble-button:hover {
+[data-theme="special"] .dribbble-button:hover,
+[data-theme="special"] .codepen-button:hover {
   background: linear-gradient(
     315deg,
     rgb(205, 164, 60) 0%,
@@ -263,7 +264,8 @@
 [data-theme="special"] .linkedin-button:hover .button-label,
 [data-theme="special"] .twitter-button:hover .button-label,
 [data-theme="special"] .bluesky-button:hover .button-label,
-[data-theme="special"] .github-button:hover .button-label {
+[data-theme="special"] .github-button:hover .button-label,
+[data-theme="special"] .codepen-button:hover .button-label {
   color: var(--special-text-theme-color) !important;
 }
 
@@ -292,4 +294,12 @@
 [data-theme="dark"] .holiday-button:hover svg .path-1,
 [data-theme="dark"] .holiday-button:hover svg .path-2 {
   fill: #d7d5ff;
+}
+
+[data-theme="special"] .codepen-button .button-icon svg path {
+  fill: #bc9b3d;
+}
+
+[data-theme="special"] .codepen-button:hover .button-icon svg path {
+  fill: var(--fill-color);
 }
