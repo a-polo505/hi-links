@@ -41,9 +41,9 @@ export default class ThemedContainer {
     });
 
     container.appendChild(this.themeButton.render());
-    container.appendChild(this.holidayButton.render());
+    // container.appendChild(this.holidayButton.render());
 
-    this.initializeSpecialTheme();
+    // this.initializeSpecialTheme();
 
     return container;
   }

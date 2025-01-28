@@ -8,6 +8,7 @@ import StampSvgManager from "./components/decorative/StampElement.js";
 import CardStampManager from "./components/decorative/CardStampManager.js";
 import BackgroundManager from "./components/decorative/BackgroundManager.js";
 import { FooterTextProvider } from "./assets/utils/FooterTextProvider.js";
+import { resetInvalidTheme } from "./assets/utils/ThemeResetter.js";
 import "./assets/styles/main.css";
 
 inject();
@@ -22,9 +23,11 @@ export default class App {
   }
 
   initialize() {
-    this.page.initializeContainer();
+    resetInvalidTheme();
 
     ThemeUtils.applyTheme(ThemeUtils.getCurrentTheme());
+
+    this.page.initializeContainer();
 
     const header = new Header();
     this.page.addHeaderContent(header);
